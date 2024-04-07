@@ -11,7 +11,6 @@ deadline_dao = DeadlineDao()
 def get_deadlines():
     try:
         data = deadline_dao.get_all_deadline()
-        print(data)
         return jsonify(data)
     except:
         data = {
